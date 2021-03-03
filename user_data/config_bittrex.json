@@ -1,0 +1,86 @@
+{
+    "max_open_trades": 16,
+    "stake_currency": "BTC",
+    "stake_amount": 0.0005,
+    "tradable_balance_ratio": 0.99,
+    "fiat_display_currency": "USD",
+    "timeframe": "1h",
+    "dry_run": true,
+    "dry_run_wallet": 0.008928742,
+    "cancel_open_orders_on_exit": true,
+    "unfilledtimeout": {
+        "buy": 10,
+        "sell": 30
+    },
+    "bid_strategy": {
+        "use_order_book": true,
+        "ask_last_balance": 0.0,
+        "order_book_top": 1,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "ask_strategy":{
+        "use_order_book": true,
+        "order_book_min": 1,
+        "order_book_max": 1,
+        "use_sell_signal": true,
+        "sell_profit_only": false,
+        "ignore_roi_if_buy_signal": false
+    },
+    "exchange": {
+        "name": "bittrex",
+        "key": "b431e74d7169412cb3584ef763eb1a6b ",
+        "secret": "d66891e2f0e545fca14042236173185d",
+        "ccxt_config": {"enableRateLimit": true},
+        "ccxt_async_config": {
+            "enableRateLimit": true,
+            "rateLimit": 500
+        },
+        "pair_whitelist": [
+            "4ART/BTC","AAPL/BTC","AAVE/BTC","ABBC/BTC","ABYSS/BTC","ADA/BTC","ADK/BTC","ADT/BTC","ADX/BTC","AEON/BTC","AID/BTC","AKN/BTC","AKRO/BTC","ALGO/BTC","AMC/BTC","AMP/BTC","AMZN/BTC","ANKR/BTC","ANT/BTC","APM/BTC","AR/BTC","ARDR/BTC","ARK/BTC","ATOM/BTC","BABA/BTC","BAL/BTC","BAND/BTC","BAT/BTC","BB/BTC","BBC/BTC","BCH/BTC","BFT/BTC","BILI/BTC","BLK/BTC","BLOCK/BTC","BNT/BTC","BNTX/BTC","BOA/BTC","BORA/BTC","BRZ/BTC","BSV/BTC","BTCV/BTC","BTE/BTC","BTM/BTC","BTS/BTC","BTT/BTC","BTU/BTC","BURST/BTC","BWF/BTC","BWX/BTC","BYND/BTC","CAMP/BTC","CBC/BTC","CELO/BTC","CGT/BTC","CHR/BTC","CKB/BTC","CND/BTC","CNS/BTC","CNTM/BTC","COMP/BTC","COSM/BTC","CPC/BTC","CRO/BTC","CRW/BTC","CTC/BTC","CTXC/BTC","CURE/BTC","CUSD/BTC","CVC/BTC","CVT/BTC","DAI/BTC","DAWN/BTC","DCR/BTC","DEP/BTC","DFI/BTC","DGB/BTC","DMT/BTC","DNA/BTC","DNT/BTC","DOGE/BTC","DOT/BTC","DRGN/BTC","DTA/BTC","DUCATO/BTC","DUSK/BTC","ECELL/BTC","ECOC/BTC","EDR/BTC","ELA/BTC","ELAMA/BTC","EMC2/BTC","ENG/BTC","ENJ/BTC","EOS/BTC","ETC/BTC","ETH/BTC","EXCL/BTC","EXE/BTC","EXP/BTC","FB/BTC","FCT/BTC","FCT2/BTC","FIL/BTC","FIRO/BTC","FIT/BTC","FLETA/BTC","FLO/BTC","FME/BTC","FNB/BTC","FNK/BTC","FOR/BTC","FRSP/BTC","FSN/BTC","FTC/BTC","FX/BTC","GAME/BTC","GBYTE/BTC","GEO/BTC","GLEEC/BTC","GLM/BTC","GME/BTC","GNC/BTC","GNO/BTC","GO/BTC","GOOGL/BTC","GRIN/BTC","GRS/BTC","GRT/BTC","GST/BTC","GTO/BTC","GXC/BTC","HBAR/BTC","HBD/BTC","HDAC/BTC","HDAO/BTC","HEDG/BTC","HIVE/BTC","HMQ/BTC","HNS/BTC","HXRO/BTC","HYDRO/BTC","ICX/BTC","IGNIS/BTC","INSTAR/BTC","INX/BTC","IOC/BTC","IOST/BTC","IOTA/BTC","IOTX/BTC","IRIS/BTC","JNT/BTC","KAI/BTC","KDA/BTC","KDAG/BTC","KLAY/BTC","KLV/BTC","KMD/BTC","KNC/BTC","KOK/BTC","KRT/BTC","KSM/BTC","LAMB/BTC","LBC/BTC","LCS/BTC","LINK/BTC","LMCH/BTC","LOOM/BTC","LOON/BTC","LRC/BTC","LSK/BTC","LTC/BTC","LUCY/BTC","LUNA/BTC","MAID/BTC","MANA/BTC","MARO/BTC","MATIC/BTC","MDT/BTC","ME/BTC","MED/BTC","MEME/BTC","MER/BTC","MET/BTC","META/BTC","MFA/BTC","MFT/BTC","MKR/BTC","MOC/BTC","MOF/BTC","MONA/BTC","MORE/BTC","MRPH/BTC","MSTR/BTC","MTC/BTC","MTL/BTC","MUE/BTC","MYST/BTC","NAV/BTC","NEO/BTC","NFLX/BTC","NGC/BTC","NKN/BTC","NLG/BTC","NMR/BTC","NOK/BTC","NPXS/BTC","NVT/BTC","NXS/BTC","NXT/BTC","OCEAN/BTC","OGN/BTC","OGT/BTC","OK/BTC","OMG/BTC","ONG/BTC","ONT/BTC","ORBS/BTC","OXEN/BTC","OXT/BTC","PART/BTC","PAX/BTC","PAY/BTC","PFE/BTC","PHNX/BTC","PI/BTC","PINK/BTC","PIVX/BTC","PLA/BTC","PMA/BTC","POT/BTC","POWR/BTC","PPC/BTC","PROM/BTC","PTON/BTC","PTOY/BTC","PXL/BTC","QLC/BTC","QNT/BTC","QRL/BTC","QTUM/BTC","RCN/BTC","RDD/BTC","REN/BTC","RENBTC/BTC","REP/BTC","REV/BTC","RLC/BTC","RVC/BTC","RVN/BTC","SBD/BTC","SC/BTC","SDT/BTC","SENSO/BTC","SG/BTC","SHR/BTC","SIB/BTC","SIX/BTC","SKM/BTC","SLS/BTC","SLV/BTC","SMBSWAP/BTC","SNT/BTC","SOLVE/BTC","SPC/BTC","SPHR/BTC","SPIN/BTC","SPND/BTC","SPY/BTC","SQ/BTC","SRN/BTC","STC/BTC","STEEM/BTC","STMX/BTC","STORJ/BTC","STPT/BTC","STRAX/BTC","SUKU/BTC","SUTER/BTC","SXP/BTC","SYS/BTC","TEA/BTC","TEMCO/BTC","TFC/BTC","THC/BTC","TNC/BTC","TRAC/BTC","TRX/BTC","TRYB/BTC","TSHP/BTC","TSLA/BTC","TUBE/BTC","TUDA/BTC","TUSD/BTC","UBQ/BTC","UBT/BTC","UCT/BTC","UMA/BTC","UNI/BTC","UPCO2/BTC","UPEUR/BTC","UPP/BTC","UPT/BTC","UPUSD/BTC","UPXAU/BTC","UQC/BTC","URAC/BTC","USDC/BTC","USDN/BTC","USDS/BTC","UST/BTC","UTI/BTC","UTK/BTC","VAL/BTC","VANY/BTC","VBK/BTC","VDX/BTC","VEE/BTC","VET/BTC","VIA/BTC","VIB/BTC","VID/BTC","VITE/BTC","VLX/BTC","VRA/BTC","VRC/BTC","VTC/BTC","WAVES/BTC","WAXP/BTC","WBTC/BTC","WGP/BTC","WICC/BTC","WINGS/BTC","WXBTC/BTC","XDN/BTC","XEM/BTC","XHV/BTC","XLM/BTC","XMY/BTC","XRP/BTC","XST/BTC","XTP/BTC","XTZ/BTC","XUC/BTC","XVG/BTC","XWC/BTC","YFL/BTC","YOU/BTC","ZEN/BTC","ZIL/BTC","ZRX/BTC"
+        ],
+        "pair_blacklist": [
+            
+        ]
+    },
+    "pairlists": [
+        {"method": "StaticPairList"}
+    ],
+    "edge": {
+        "enabled": false,
+        "process_throttle_secs": 3600,
+        "calculate_since_number_of_days": 7,
+        "allowed_risk": 0.01,
+        "stoploss_range_min": -0.01,
+        "stoploss_range_max": -0.1,
+        "stoploss_range_step": -0.01,
+        "minimum_winrate": 0.60,
+        "minimum_expectancy": 0.20,
+        "min_trade_number": 10,
+        "max_trade_duration_minute": 1440,
+        "remove_pumps": false
+    },
+    "telegram": {
+        "enabled": true,
+        "token": "1448196303:AAFjYbIagLB9iZeX_-w4smr6Vv6OhM3mpyo",
+        "chat_id": "1631078856"
+    },
+    "api_server": {
+        "enabled": false,
+        "listen_ip_address": "127.0.0.1",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "jwt_secret_key": "somethingrandom",
+        "CORS_origins": [],
+        "username": "freqtrader",
+        "password": "SuperSecurePassword"
+    },
+    "bot_name": "freqtrade",
+    "initial_state": "running",
+    "forcebuy_enable": false,
+    "internals": {
+        "process_throttle_secs": 5
+    }
+}
