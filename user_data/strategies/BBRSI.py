@@ -25,21 +25,21 @@ class BBRSI(IStrategy):
     # Minimal ROI designed for the strategy.
     # This attribute will be overridden if the config file contains "minimal_roi".
     minimal_roi = {
-        "0": 0.58701,
-        "460": 0.16384,
-        "1168": 0.05177,
-        "2033": 0
+        "0": 0.3239,
+        "363": 0.20167,
+        "729": 0.06314,
+        "1732": 0
     }
 
     # Optimal stoploss designed for the strategy.
     # This attribute will be overridden if the config file contains "stoploss".
-    stoploss = -0.22064
+    stoploss = -0.02961
 
     # Trailing stoploss
     trailing_stop = True
     trailing_only_offset_is_reached = False
-    trailing_stop_positive = 0.04142
-    trailing_stop_positive_offset = 0.10905 # Disabled / not configured
+    trailing_stop_positive = 0.01087
+    trailing_stop_positive_offset = 0.04783 # Disabled / not configured
 
     # Optimal ticker interval for the strategy.
     timeframe = '1h'
@@ -219,7 +219,7 @@ class BBRSI(IStrategy):
         dataframe.loc[
             (
                 #(dataframe['rsi'] > 30) &  # Signal: RSI crosses above 30
-                (dataframe['close'] < dataframe['bb_lowerband3']) &
+                (dataframe['close'] < dataframe['bb_lowerband4']) &
                 (dataframe['volume'] > 0)  # Make sure Volume is not 0
             )
             ,
@@ -236,8 +236,8 @@ class BBRSI(IStrategy):
         """
         dataframe.loc[
             (
-                (dataframe['rsi'] > 65) &
-                (dataframe['close'] > dataframe['bb_upperband1']) &  # close above BB middle
+                #(dataframe['rsi'] > 65) &
+                (dataframe['close'] > dataframe['bb_lowerband1']) &  # close above BB middle
                 (dataframe['volume'] > 0)  # Make sure Volume is not 0
             ),
             'sell'] = 1
